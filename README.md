@@ -1,8 +1,6 @@
-# deploy-wiremock-container-aws-elastic-beanstalk
+# Deploying containers to elastic beanstalk with EB CLI
 
 Example of deploying wiremock container to AWS Elastic Beanstalk. We use a publicly available wiremock container, [rodolpheche/wiremock](https://hub.docker.com/r/rodolpheche/wiremock/).
-
-# Deploying containers to elastic beanstalk with EB CLI
 
 As a prerequisite, we need to install [EB CLI](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-install.html).
 
