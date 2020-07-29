@@ -83,7 +83,7 @@ Alternatively, user docker compose.
 docker-compose up -d
 ```
 
-# (3) Check endpoint
+## (3) Check endpoint
 
 You can see the mock data comming from the browser
 
