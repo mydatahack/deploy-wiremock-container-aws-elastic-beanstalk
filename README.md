@@ -6,11 +6,11 @@ Example of deploying wiremock container to AWS Elastic Beanstalk. We use a publi
 
 As a prerequisite, we need to install [EB CLI](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-install.html).
 
-# (1) Create Dockerrun.aws.json
+## (1) Create Dockerrun.aws.json
 
 First, we need to create Dcokerrun.aws.json. For multi-container, EB uses ECS. Dockerrun file is similer to docker compose file. It is a easier way to tell what ECS should do. 
 
-# (2) Initialise with eb init
+## (2) Initialise with eb init
 
 First of all we need to initialise it. Make sure to choose Multi-container Docker option for running multiple containers.
 
@@ -21,7 +21,7 @@ eb init
 eb init -i
 ```
 
-# (3) Deploy first time
+## (3) Deploy first time
 
 Use eb create command with environment name.
 
@@ -29,7 +29,7 @@ Use eb create command with environment name.
 eb create swapi-mock
 ```
 
-# (4) Update
+## (4) Update
 
 We can update the code with deploy command by passing environment name
 
@@ -37,7 +37,7 @@ We can update the code with deploy command by passing environment name
 eb deploy swapi-mock
 ```
 
-# (5) Terminate
+## (5) Terminate
 
 This will delete all the resources associated with environment
 
