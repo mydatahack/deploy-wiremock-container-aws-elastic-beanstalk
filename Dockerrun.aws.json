@@ -1,0 +1,54 @@
+{
+  "AWSEBDockerrunVersion": 2,
+    "volumes": [
+      {
+        "name": "wiremock-data",
+        "host": {
+          "sourcePath": "/var/app/current/mock-data"
+        }
+      },
+      {
+        "name": "wiremock-record",
+        "host": {
+          "sourcePath": "/var/app/current/recordings"
+        }
+      }
+    ],
+     "containerDefinitions": [
+       {
+         "name": "integration-wiremock-container",
+         "image": "rodolpheche/wiremock",
+         "essential": true,
+         "memory": 400,
+         "portMappings": [
+           {
+             "hostPort": 80,
+             "containerPort": 8080
+           }
+         ],
+         "mountPoints": [
+           {
+             "sourceVolume": "wiremock-data",
+             "containerPath": "/home/wiremock"
+           }
+         ]
+       },
+       {
+         "name": "integration-wiremock-recorder",
+         "image": "rodolpheche/wiremock",
+         "memory": 400,
+         "portMappings": [
+           {
+             "hostPort": 9443,
+             "containerPort": 8080
+           }
+         ],
+         "mountPoints": [
+           {
+             "sourceVolume": "wiremock-record",
+             "containerPath": "/home/wiremock"
+           }
+         ]
+       }
+     ]
+   } 

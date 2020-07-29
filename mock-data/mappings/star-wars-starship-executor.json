@@ -1,0 +1,19 @@
+{
+  "id" : "14711cda-f7bc-3237-84ab-964ff95385aa",
+  "request" : {
+    "url" : "/starwars/api/starship/executor",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "starships/starships-executor.json",
+    "headers" : {
+      "date" : "Wed, 01 Jul 2020 04:18:42 GMT",
+      "x-aspnet-version" : "4.0.30319",
+      "x-powered-by" : "ASP.NET",
+      "content-type" : "application/json; charset=utf-8",
+      "cache-control" : "private"
+    }
+  },
+  "uuid" : "14711cda-f7bc-3237-84ab-964ff95385aa"
+}

@@ -1,0 +1,19 @@
+{
+  "mappings": [
+    {
+      "id": "da5c413e-c0dc-49b3-8c46-226e425a0d51",
+      "request": {
+        "method": "ANY"
+      },
+      "response": {
+        "status": 200,
+        "proxyBaseUrl": "https://starwars.api.com"
+      },
+      "uuid": "da5c413e-c0dc-49b3-8c46-226e425a0d51",
+      "priority": 10
+    }
+  ],
+  "meta": {
+    "total": 1
+  }
+}

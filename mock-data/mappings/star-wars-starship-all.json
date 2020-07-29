@@ -1,0 +1,19 @@
+{
+  "id" : "624e6904-8cc2-376a-9a0a-0f3d05d0c548",
+  "request" : {
+    "url" : "/starwars/api/starship",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "starships/starships.json",
+    "headers" : {
+      "date" : "Wed, 01 Jul 2020 04:19:42 GMT",
+      "x-aspnet-version" : "4.0.30319",
+      "x-powered-by" : "ASP.NET",
+      "content-type" : "application/json; charset=utf-8",
+      "cache-control" : "private"
+    }
+  },
+  "uuid" : "624e6904-8cc2-376a-9a0a-0f3d05d0c548"
+}

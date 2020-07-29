@@ -1,0 +1,20 @@
+version: "3.8"
+services:
+  wiremock:
+    image: rodolpheche/wiremock 
+    container_name: swapi
+    ports:
+      - "8080:8080"
+    volumes:
+      - type: bind
+        source: ./mock-data
+        target: /home/wiremock
+  wiremock-recorder:
+    image: rodolpheche/wiremock 
+    container_name: swapi-record
+    ports:
+      - "8111:8080"
+    volumes:
+      - type: bind
+        source: ./recordings
+        target: /home/wiremock
